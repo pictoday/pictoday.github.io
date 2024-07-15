@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    /* -----------------Font & Size-------------------- */
+    /* ---------------- 1rem = 16P -------------------- */
+    --font-size-Titre-Sec:1rem;
+    --font-size-H1:6em;
+    --font-size-H2:2em;
+    --font-size-H3:3em;
+    --font-size-H4:2em;
+    --font-size-P:1rem;
+    --font-family-Advent:'Advent Pro',sans-serif;
+    --font-family-Dancing:'Dancing Script',sans-serif;
+    /* -----------------white mode-------------------- */
+    --text-white: #000000;
+    --bg-white: #f0f0f0;
+    /* -------------------darck mode------------------ */
+    --text-darck: #e0d9d3;
+    --text-darck-sec01: #fffae1;
+    --bg-darck:  #14110e;
+    --bg-darck-sec01: #16120f;
+    --bg-darck-foot: #524A3A;
+    --text-darck-foot: #fffae1;
+    /* -------------------Chargement------------------ */
+    --font-size-chargemnt-Mobil:2.5em;
+    --font-size-chargemnt:6em;
+    --text-chargement01: #484848;
+    --text-chargement02: #fff900;
+    --bg-chargement:  #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    letter-spacing: 1px;
+    font-family: var(--font-family-Advent);
+    padding: 0;
+    margin: 0;
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+}
+.iconeHome{
+    transform: translate(300px,0);
+    position: absolute;
+    display: block;
+    padding-top: 10px;
+    padding-right: 10px;
+    width: 40px;
+    height: auto;
+}
+nav{
+    background: #ce7450;
+    font-family: var(--font-family-Advent);
+    text-decoration: none;
+}
+.toggle-image {
+
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+} 
+
+.hidden {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+#reset-button {  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 25px;
+}
+
+/* ------------------------Card---------------------- */
+.cardeIndex{
+    margin-top: 0;
+    font-family: 'Advent Pro',sans-serif;
+    padding: 0px 10px;
+    background: linear-gradient(1deg,#1a1a1a,#ce7450) center center no-repeat;
+    line-height: 1.4;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+.titleIdex{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-darck-sec01);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.title{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-darck-sec01);
+    font-weight: bold;
+    margin-top: 0px;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 1px;
+}
+.item{
+    text-align: center;
+    width:250px;
+    height: 350px;
+    border-radius: 45px 45px 20px 20px;
+    margin: 30px 5px;
+    background: linear-gradient(to bottom, transparent, #fff) ;
+    box-shadow: 0 10px 15px #faf9f91a,0 5px 5px #ffffff1a ;
+    transition: transform 0.3s;
+    transform: translate3d(0,-1px,0);
+}
+.item:hover{
+    transform: translate3d(0, -10px, 0) scale(1.05);
+}
+.item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius:  15px 15px 0 0;
+    transition: opacity 0.3s ease;
+}
+.cardIndex{
+    padding-bottom: 20px;
+}
+.item__body{
+    padding: 20px;
+}
+.titreIndex{
+    padding: 2px;
+}
+.item__title{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold ;
+    color: #232323;
+}
+
+.item__description{
+    color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 600;
+}
+.items{
+    position: relative;
+}
+.item a{
+    text-align: left;
+}
+
