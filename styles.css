@@ -7,23 +7,12 @@ html{
 :root{
     /* ---------------------Font---------------------- */
     --font-family-Advent:'Advent Pro',sans-serif;
-    /* -----------------white mode-------------------- */
+    /* -----------------color mode-------------------- */
     --text-white: #000000;
     --bg-matin: #cc5641;
     --bg-midi: #35406d;
     --bg-soir: #202020;
-    /* -------------------darck mode------------------ */
     --text-darck-sec01: #fffae1;
-    --bg-darck:  #14110e;
-    --bg-darck-sec01: #16120f;
-    --bg-darck-foot: #524A3A;
-    --text-darck-foot: #fffae1;
-    /* -------------------Chargement------------------ */
-    --font-size-chargemnt-Mobil:2.5em;
-    --font-size-chargemnt:6em;
-    --text-chargement01: #484848;
-    --text-chargement02: #fff900;
-    --bg-chargement:  #000;
 }
 *{
     margin: 0;
