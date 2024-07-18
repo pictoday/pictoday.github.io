@@ -1,20 +1,16 @@
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const images = document.querySelectorAll('.toggle-image');
-//     const resetButton = document.getElementById('reset-button');
-
-//     images.forEach(image => {
-//         image.addEventListener('click', () => {
-//             image.classList.add('hidden');
-//         });
-//     });
-
-//     resetButton.addEventListener('click', () => {
-//         images.forEach(image => {
-//             image.classList.remove('hidden');
-//         });
-//     });
-// });
+function toggleImage(imgElement) {
+    imgElement.classList.toggle('hidden');
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.toggle-image');
+    const resetButton = document.getElementById('reset-button');
+    resetButton.addEventListener('click', () => {
+        images.forEach(image => {
+            image.classList.remove('hidden');
+        });
+    });
+});
 
 //----------------------------------------------------------------------------------------
 // document.addEventListener('DOMContentLoaded', function() {
@@ -62,27 +58,29 @@
 
 //-----------------------------------------------------------------
 
-document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.toggle-image');
-    const resetButton = document.getElementById('reset-button');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const images = document.querySelectorAll('.toggle-image');
+//     const resetButton = document.getElementById('reset-button');
 
-    if (images.length > 0) {
-        images.forEach(image => {
-            image.addEventListener('click', () => {
-                image.style.opacity = 0.5;
-            });
-        });
-    }
+//     if (images.length > 0) {
+//         images.forEach(image => {
+//             image.addEventListener('click', () => {
+//                 image.style.opacity = 0.5;
+//             });
+//         });
+//     }
     
 
-    if (resetButton) {
-        resetButton.addEventListener('click', () => {
-            images.forEach(image => {
-                image.style.opacity = 1;
-            });
-        });
-    }
-});
+//     if (resetButton) {
+//         resetButton.addEventListener('click', () => {
+//             images.forEach(image => {
+//                 image.style.opacity = 1;
+//             });
+//         });
+//     }
+// });
+
+
 
 //-------------------------re click sur image pour activer----------------------------------------------------------
 
