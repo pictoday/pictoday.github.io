@@ -50,8 +50,9 @@ nav{
 } 
 
 .hidden {
-    opacity: 0.2;    
+    opacity: 0.2 !important;    
 }
+
 
 #reset-button {  
     margin-top: 20px;
@@ -106,6 +107,10 @@ nav{
     box-shadow: 0 10px 15px #faf9f91a,0 5px 5px #ffffff1a ;
     transition: transform 0.3s;
     transform: translate3d(0,-1px,0);
+    position: relative;
+}
+.item a{
+    text-align: left;
 }
 .item:hover{
     transform: translate3d(0, -10px, 0) scale(1.05);
@@ -138,10 +143,28 @@ nav{
     font-size: 16px;
     font-weight: 600;
 }
-.items{
+.anim{
     position: relative;
 }
-.item a{
-    text-align: left;
+.valide01{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    background-image: url(./media/animation/animExploV.png);
+    /* border: solid red 1px;*/
+    position: absolute; 
+    /* top:-75px;
+    left: 140px; */
+    top: 100%;
+    left: 100%; 
+    transform: translate(-50%,-50%);
 }
-
+.animValide{
+    animation-timing-function: steps(28);
+    animation-name: animValide;
+    animation-duration:0.8s;
+}
+@keyframes animValide{
+    from{background-position:left;}
+    to{background-position:right;}
+}
