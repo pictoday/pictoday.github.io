@@ -12,6 +12,7 @@ html{
     --bg-matin: #cc5641;
     --bg-midi: #35406d;
     --bg-soir: #202020;
+    --bg-btn: #f1f1f1;
     --text-darck-sec01: #fffae1;
 }
 *{
@@ -56,13 +57,16 @@ nav{
 
 
 #reset-button {  
+    font-weight: bold;
+    background-color: var(--bg-btn);
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 10px 10px;
+    padding: 15px 15px;
     font-size: 16px;
     cursor: pointer;
     display: flex;
-    border-radius: 25px;
+    /* border-radius: 25px; */
+    border-radius: 34% 66% 47% 53% / 62% 44% 56% 38%;
 }
 
 /* ------------------------Card---------------------- */
@@ -207,7 +211,7 @@ nav{
     background:#2f3446 ;
 }
 .textFoot a {
-    color: #fffae1;
+    color: var(--bg-btn);
 }
 .copyr{
     font-weight: 100;
