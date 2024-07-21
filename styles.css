@@ -15,6 +15,7 @@ html{
     --text-darck-sec01: #fffae1;
 }
 *{
+    /* border: solid 1px red;  */
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -81,6 +82,19 @@ nav{
     line-height: 1.4;
     height:100%;
     overflow-x: hidden;
+    padding-bottom: 1px;
+    margin-bottom: -1px;
+}
+.cardeMatSoir{
+    margin-top: 0;
+    font-family: 'Advent Pro',sans-serif;
+    padding: 0px 10px 50px 10px;
+    background: linear-gradient(1deg,var(--bg-soir),var(--bg-midi),var(--bg-matin)) center center no-repeat;
+    line-height: 1.4;
+    height:100%;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    margin-bottom: -1px;
 }
 .titleIdex{
     text-align: center;
@@ -167,4 +181,33 @@ nav{
 @keyframes animValide{
     from{background-position:left;}
     to{background-position:right;}
+}
+.footerWave{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-soir) ; 
+    height: auto;
+    width: 100%;
+
+    /* bottom: 0; */
+}
+.backgVague{   
+    transform: translate(0,1.5px);
+}
+.textFoot{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #fffae1;
+    font-weight: 700;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    background:#2f3446 ;
+}
+.copyr{
+    font-weight: 100;
+    font-size: 20px;
+    transform: translate(-2px,-5px);
 }
